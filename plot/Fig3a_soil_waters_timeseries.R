@@ -22,7 +22,8 @@ site1 = pal[factor(D47$site, levels = c("Lantian", "Shilou", "Jiaxian"))]
 site2 = pal[factor(d18sw$site, levels = c("Lantian", "Shilou", "Jiaxian"))]
 site3 = pal[factor(Dp17sw$site, levels = c("Lantian", "Shilou", "Jiaxian"))]
 
-png("figures/Fig3a.soil_water_isotopes_timeseries.png", 9, 4, units = "in", res = 500)
+# png("figures/Fig3a.soil_water_isotopes_timeseries.png", 9, 4, units = "in", res = 500)
+pdf("figures/Fig3a.soil_water_isotopes_timeseries.pdf", 9, 4)
 par(mar = c(4, 3, 4, 3))
 plot(0, 0, xlim = c(0, 7), ylim = c(2.5, 7.5), axes = FALSE,
      xlab = "", ylab = "")

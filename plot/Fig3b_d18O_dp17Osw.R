@@ -53,9 +53,9 @@ p2 = ggplot(bayes_data, aes(x = 1e3 * (exp(d18sw / 1e3) - 1), y = post_d18p)) +
   theme_bw() + theme +
   annotate("text", x = -6, y = -19, label = "i", fontface = "bold", size = 5) +
   labs(x = expression(delta^"18"*"O"[sw]*" (\u2030, VSMOW)"),
-       y = expression(delta^"'18"*"O"[p]*" (\u2030, VSMOW)"),
+       y = expression(delta^"18"*"O"[p]*" (\u2030, VSMOW)"),
        fill = expression(paste("T"[Delta][47]*" (", degree, "C)")), shape = "")
 ggarrange(p1, p2, nrow = 1, ncol = 2, align = "hv",
           common.legend = TRUE, legend = "right")
-ggsave("figures/Fig3b.dp18sw_Dp17sw.jpg", width = 9, height = 4, dpi = 500)
+ggsave("figures/Fig3b.dp18sw_Dp17sw.pdf", width = 9, height = 4, dpi = 500)
 
